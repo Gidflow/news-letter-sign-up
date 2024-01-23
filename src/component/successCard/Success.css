@@ -1,0 +1,59 @@
+:root{
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+  }
+  
+.success{
+    background-color: var(--White);
+    padding: 3rem;
+    max-width: 300px;
+    border-radius:30px;
+    font-family: "Roboto" sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+}
+
+.success h1{
+    font-size: 2.8rem;
+    line-height: 1;
+    color: var(--Dark-Slate-Grey);
+    
+}
+
+.success button{
+    display: block;
+}
+
+.success p{
+    color: var(--Charcoal-Grey);
+    line-height: 1.5;
+}
+
+.iconText{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width:700px){
+    .success{
+        justify-content: space-around;
+        max-width: unset;
+        border-radius: unset;
+        height: 100vh;
+        padding: 0 1.5rem;
+        /* padding: 40% 1.5rem 20% 1.5rem; */
+    }
+
+    .success p{
+        font-size: 16px;
+    }
+    .success h1{
+        font-size: 2.5rem;
+    }
+
+}
