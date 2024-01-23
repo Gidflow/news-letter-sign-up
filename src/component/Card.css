@@ -4,6 +4,7 @@
     --Charcoal-Grey: hsl(235, 18%, 26%);
     --Grey: hsl(231, 7%, 60%);
     --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
   }
   
   p{
@@ -89,7 +90,18 @@
    opacity: 0.8;
    font-size: 1rem;
   }
+  input:active{
+    outline: var(--Dark-Slate-Grey);
+    opacity: unset;
+    border: 1px solid var(--Dark-Slate-Grey);
+  }
 
+  .error{
+    color: var(--Tomato);
+    background-color: var(--Grey);
+    border: .3px solid var(--Tomato);
+    background-color:hsla(4, 100%, 67%, 0.123) ;
+  }
   label{
     font-size: 13px;
     color: var(--Dark-Slate-Grey);
@@ -109,6 +121,10 @@
     background-color: var(--Dark-Slate-Grey);
     color: var(--White);
     font-size: 1rem;
+  }
+
+  button:active{
+    background: radial-gradient(circle at 10% 20%, rgba(239, 87, 87, 0.74) 0%, rgba(245, 123, 13, 0.74) 90.2%);
   }
 
   .dislay-none{

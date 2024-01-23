@@ -15,6 +15,7 @@ const Card = ({show, setShow, email, setEmail}) => {
         e.preventDefault();
 
         const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        
 
         if(email === ""){
             setError("valid email required")
@@ -28,6 +29,10 @@ const Card = ({show, setShow, email, setEmail}) => {
         else if(pattern.test(email) && email !== ""){
             setShow(true);
         }
+
+        setTimeout(()=>{
+            setError("")
+        }, 1000)
     }
   return (
     <div className={`${show && "dislay-none"} card`}>
@@ -63,7 +68,7 @@ const Card = ({show, setShow, email, setEmail}) => {
             <form onSubmit={handleSubmit} action="html">
               <div className="input">
               <label htmlFor="email"><span>Email address</span><span>{error && error}</span></label>
-              <input type="email" name='email' placeholder='email@company.com' value={email} onChange={(e)=>{
+              <input className={`${error && "error"}`} type="email" name='email' placeholder='email@company.com' value={email} onChange={(e)=>{
                 setEmail(e.target.value);
               }} />
               </div>
