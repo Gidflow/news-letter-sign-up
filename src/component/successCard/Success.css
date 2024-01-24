@@ -26,6 +26,8 @@
 
 .success button{
     display: block;
+    text-align: center;
+    color: var(--White);
 }
 
 .success p{
