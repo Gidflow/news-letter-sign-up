@@ -3,7 +3,7 @@ import "./Success.css";
 import icon from "../../assets/assets/images/icon-success.svg"
 
 
-const SUccess = ({email, show, setShow}) => {
+const SuccessPage = ({email, show, setShow}) => {
   return (
     <div className='success'>
         <div className="iconText">
@@ -20,4 +20,4 @@ const SUccess = ({email, show, setShow}) => {
   )
 }
 
-export default SUccess
+export default SuccessPage

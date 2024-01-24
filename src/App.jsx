@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import './App.css'
 import Card from './component/Card'
-import SUccess from './component/successCard/SUccess'
+import SuccessPage from './component/successCard/SuccessPage';
 
 function App() {
   
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
   <Card show={show} setShow={setShow} setEmail={setEmail} email={email}/>
     {
-       show && <SUccess email={email} show={show} setShow={setShow}/>
+       show && <SuccessPage email={email} show={show} setShow={setShow}/>
     }
   
     </div>
